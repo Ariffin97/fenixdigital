@@ -3,17 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Fenix Digital</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="daxhboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Welcome to the Admin Dashboard</h1>
-        <p>This is a placeholder page for the admin dashboard. Customize this page as needed.</p>
+    <header>
+        <div class="header-left">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Dashboard</a></li>
+                    <li><a href="#users">Users</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#" class="profile"><i class="fas fa-user"></i></a>
+            <a href="#" class="notifications"><i class="fas fa-bell"></i></a>
+        </div>
+    </header>
+
+    <div class="main-content" id="main-content">
+        <section id="home">
+            <h2>Dashboard Overview</h2>
+            <div class="widgets">
+                <div class="widget">
+                    <h3>Total Users</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="widget">
+                    <h3>Active Users</h3>
+                    <p>567</p>
+                </div>
+                <div class="widget">
+                    <h3>New Sign-ups</h3>
+                    <p>89</p>
+                </div>
+                <div class="widget">
+                    <h3>Revenue</h3>
+                    <p>$12,345</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="users">
+            <h2>User Management</h2>
+            <!-- Include user management content here -->
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics and Reports</h2>
+            <!-- Include analytics and reports content here -->
+        </section>
+
+        <section id="content">
+            <h2>Content Management</h2>
+            <!-- Include content management tools here -->
+        </section>
+
+        <section id="settings">
+            <h2>System Settings</h2>
+            <!-- Include settings content here -->
+        </section>
+
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <!-- Include notifications content here -->
+        </section>
+
+        <section id="profile">
+            <h2>Profile Management</h2>
+            <!-- Include profile management content here -->
+        </section>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
