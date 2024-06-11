@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenix Digital</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .contact-item {
+            margin: 20px 0;
+            max-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .contact-item i {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+    
+        .contact-item h4 {
+            margin-bottom: 10px;
+        }
+    
+        .contact-item p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    
+        .contact-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    
+        @media (min-width: 768px) {
+            .contact-info {
+                flex-direction: row;
+                justify-content: center;
+            }
+    
+            .contact-item {
+                margin: 0 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Fenix Digital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#disclaimer">Disclaimer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Admin Login</a> <!-- Admin Login Link -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <img src="./image/FenixDigitalLogo.png" alt="Fenix Digital Logo" class="logo mb-3" id="header-logo">
+            <h1 class="animated fadeInDown">Welcome to Fenix Digital</h1>
+            <p class="lead animated fadeInUp">We specialize in website design and advertising</p>
+            <a href="#services" class="btn btn-primary animated fadeInUp">Our Services</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">About Us</h2>
+            <div class="row mt-4">
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+                    <p class="lead text-center" style="text-align: justify;">Welcome to Fenix Digital, where innovation meets creativity. At Fenix Digital, we are passionate about transforming your digital presence and helping your business reach new heights.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4">
+                        <h4 class="text-primary">Who We Are</h4>
+                        <p style="text-align: justify;">Fenix Digital is a leading web design and digital marketing agency dedicated to crafting exceptional digital experiences. With years of expertise and a team of highly skilled professionals, we specialize in creating stunning, user-friendly websites and powerful digital marketing strategies tailored to your unique business needs.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-primary">Our Mission</h4>
+                        <p style="text-align: justify;">Our mission is to empower businesses by delivering cutting-edge digital solutions that drive growth, enhance brand visibility, and create lasting value. We believe in the power of creativity, technology, and strategic thinking to bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 d-flex flex-column" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <h4 class="text-primary">Why Choose Us?</h4>
+                        <p style="text-align: justify;"><strong>Expertise:</strong> Our team of experts brings a wealth of knowledge and experience in web design, digital marketing, and branding.</p>
+                        <p style="text-align: justify;"><strong>Customization:</strong> We understand that every business is unique. That's why we offer personalized solutions tailored to your specific goals and challenges.</p>
+                        <p style="text-align: justify;"><strong>Innovation:</strong> We stay ahead of the curve by embracing the latest trends and technologies to provide you with cutting-edge solutions.</p>
+                        <p style="text-align: justify;"><strong>Results-Driven:</strong> Our focus is on delivering measurable results that drive growth and success for your business.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-primary">What We Do</h4>
+                        <p style="text-align: justify;"><strong>Website Design:</strong> We design beautiful, responsive, and functional websites that not only look great but also deliver an outstanding user experience. Our designs are crafted to reflect your brand identity and engage your target audience effectively.</p>
+                        <p style="text-align: justify;"><strong>Digital Marketing:</strong> Our comprehensive digital marketing services are designed to develop customized strategies that boost your online presence, attract more customers, and increase conversions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <p class="font-italic" style="text-align: justify;">At Fenix Digital, we are more than just a digital agency. We are your partners in success, committed to helping you achieve your business goals and exceed your expectations. Let us help you soar to new heights in the digital world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center" data-aos="fade-up">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-in" data-aos-delay="100">
+                <div class="service-box text-center">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h3>Website Design</h3>
+                    <p>We create stunning and responsive websites tailored to your business needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-in" data-aos-delay="200">
+                <div class="service-box text-center">
+                    <i class="fas fa-bullhorn fa-3x mb-3"></i>
+                    <h3>Advertising</h3>
+                    <p>Our advertising services help you reach a wider audience and grow your business.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-in" data-aos-delay="300">
+                <div class="service-box text-center">
+                    <i class="fas fa-truck fa-3x mb-3"></i>
+                    <h3>Parcel Service</h3>
+                    <p>Reliable and efficient parcel delivery service to ensure your packages arrive on time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                    <div class="portfolio-item">
+                        <a href="https://www.borderkiu.com" target="_blank">
+                            <img src="./image/borderkiu.jpg" class="img-fluid" alt="Project 1">
+                        </a>
+                        <div class="portfolio-overlay">
+                            <h3>BorderKiu.com</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="./image/Trainingcenter.png" class="img-fluid" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <h3>Website Design</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="./image/DALL·E 2024-05-31 09.48.06 - A majestic and vibrant penguin soaring through a fantastical sky while holding a parcel wrapped in golden ribbon. The penguin has an excited and joyfu.webp" class="img-fluid" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h3>Parcel Penguin</h3>
+                            <p>New Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About the Creator Section -->
+    <section id="creators" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">About the Creators</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="creator-box text-center" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./image/WhatsApp Image 2024-05-31 at 11.11.55 AM.jpeg" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" class="img-fluid mb-3" alt="Creator Image">
+                        <h3>Nur Ariffin Anuar</h3>
+                        <!--<p>About</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="creator-box text-center" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./image/zac.jpeg" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" class="img-fluid mb-3" alt="Creator Image">
+                        <h3>Dr. Zachary MacChesney</h3>
+                        <!--<p>About</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Contact Us</h2>
+            <div class="contact-info text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-item">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h4>Phone</h4>
+                    <p>+60178941403 (Dr. Zachary)</p>
+                    <p>+601116197471 (Ariffin)</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:ariffin.fenixdigital@gmail.com">ariffin.fenixdigital@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Disclaimer</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="100">All information provided on this website is for informational purposes only and does not constitute professional advice.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-light text-center">
+        <p>&copy; 2024 Fenix Digital. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
