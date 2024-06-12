@@ -1,0 +1,106 @@
+/* Custom styles for the Admin Dashboard */
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc !important;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #adb5bd !important;
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-body h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 0.5rem;
+}
+
+.main-content {
+    margin-top: 2rem;
+}
+
+.main-content section {
+    margin-bottom: 2rem;
+}
+
+.header-right .fa-user,
+.header-right .fa-bell {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.header-right .fa-user:hover,
+.header-right .fa-bell:hover {
+    color: #ccc;
+}
+
+.widget {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.widget h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.widget p {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.profile,
+.notifications {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile:hover,
+.notifications:hover {
+    color: #ccc;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
