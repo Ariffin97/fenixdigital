@@ -14,13 +14,13 @@ app.use(session({
     saveUninitialized: true
 }));
 
-// Serve static files
-app.use(express.static(path.join(__dirname, '/')));
+// Serve static files from the current directory
+app.use(express.static(__dirname));
 
 // Users data
 const users = [
     { username: 'ariffinanuar', password: 'Ariffin.97' },
-    { username: 'user2', password: 'pass2' }
+    { username: 'zac', password: 'Admin1234' }
 ];
 
 // Login endpoint
@@ -38,7 +38,7 @@ app.post('/login', (req, res) => {
 // Dashboard endpoint
 app.get('/dashboard', (req, res) => {
     if (req.session.user) {
-        res.send('Welcome to your dashboard, ' + req.session.user.username);
+        res.sendFile(path.join(__dirname, 'dashboard.html'));
     } else {
         res.redirect('/login.html');
     }
@@ -47,4 +47,15 @@ app.get('/dashboard', (req, res) => {
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+});
+
+// Log Out
+app.get('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            return res.redirect('/dashboard');
+        }
+        res.clearCookie('connect.sid');
+        res.redirect('/');
+    });
 });
